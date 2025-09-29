@@ -76,3 +76,17 @@ readme-motion --init
 npx readme-motion --config motion.config.json
 # or
 node cli/index.js --config motion.config.json
+```
+
+---
+
+<p align="center">
+  <a href="https://hits.seeyoufarm.com">
+    <img 
+      alt="readme-motion visits"
+      src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fxryv%2Freadme-motion&count_bg=%2300E5FF&title_bg=%23777&icon=github.svg&icon_color=%23FFFFFF&title=visits&edge_flat=false"
+    />
+  </a>
+</p>
+
+> *the answer was already known before you asked, but only if you knew what to listen for.*
