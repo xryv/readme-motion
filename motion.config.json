@@ -1,5 +1,7 @@
 {
+  "theme": "industrial",
   "outDir": "assets",
+  "easterEgg": "wizard",
   "items": [
     {
       "type": "typewriter",
@@ -24,11 +26,45 @@
       "file": "progress-build.svg",
       "width": 600,
       "height": 60,
-      "bg": "#0d1117",
-      "barColor": "#00E5FF",
-      "trackColor": "#1f2937",
       "label": "Build pipeline",
       "percent": 72
+    },
+    {
+      "type": "badge",
+      "file": "badge-status.svg",
+      "label": "Status",
+      "value": "ONLINE",
+      "pulse": true,
+      "tone": "good",
+      "width": 180,
+      "height": 36
+    },
+    {
+      "type": "counter",
+      "file": "counter-stars.svg",
+      "label": "Stars",
+      "from": 123,
+      "to": 136,
+      "digits": 4,
+      "durationMs": 1400,
+      "width": 220,
+      "height": 48
+    },
+    {
+      "type": "sparkline",
+      "file": "sparkline-commits.svg",
+      "data": [3,6,4,9,8,13,7,12,16,14,18,21,19,23,20,26,24,22],
+      "width": 600,
+      "height": 80,
+      "label": "Commits last 18 weeks"
+    },
+    {
+      "type": "ticker",
+      "file": "ticker-nowplaying.svg",
+      "text": "Now playing: Zevimetal · readme-motion · industrial theme · ✨",
+      "width": 600,
+      "height": 36,
+      "speed": 55
     }
   ]
 }

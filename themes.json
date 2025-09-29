@@ -1,0 +1,32 @@
+{
+  "dark": {
+    "bg": "#0d1117",
+    "text": "#E6EDF3",
+    "muted": "#6B7280",
+    "accent": "#00E5FF",
+    "track": "#1f2937",
+    "good": "#10B981",
+    "warn": "#F59E0B",
+    "bad": "#EF4444"
+  },
+  "industrial": {
+    "bg": "#0b0e11",
+    "text": "#E8EDF2",
+    "muted": "#8B949E",
+    "accent": "#00B3FF",
+    "track": "#1a2129",
+    "good": "#3ADB8A",
+    "warn": "#FFCC00",
+    "bad": "#FF4D4F"
+  },
+  "light": {
+    "bg": "#ffffff",
+    "text": "#111827",
+    "muted": "#6B7280",
+    "accent": "#2563EB",
+    "track": "#E5E7EB",
+    "good": "#059669",
+    "warn": "#D97706",
+    "bad": "#DC2626"
+  }
+}
