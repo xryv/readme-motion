@@ -1,24 +1,51 @@
 # .github/workflows/readme-motion.yml
 name: Render readme-motion assets
+
 on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 6 * * *" # every day 06:00 UTC
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+
+# Needed to push commits back to the repo
+permissions:
+  contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci || npm i
-      - run: node cli/index.js --config motion.config.json
-      - name: Commit assets
+
+      # Use npm ci if lockfile exists, else npm i
+      - name: Install deps (ci)
+        if: hashFiles('package-lock.json') != ''
+        run: npm ci
+      - name: Install deps (i)
+        if: hashFiles('package-lock.json') == ''
+        run: npm i
+
+      - name: Generate SVGs
+        run: node cli/index.js --config motion.config.json
+
+      - name: Commit assets (if changed)
         run: |
           git config user.name "readme-motion-bot"
           git config user.email "bot@example.com"
-          git add assets/*.svg
-          git commit -m "chore: update animated SVGs" || echo "no changes"
+          # If nothing matches, don't fail
+          git add -A assets || true
+          # Bail out gracefully when there are no changes
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+            exit 0
+          fi
+          git commit -m "chore: update animated SVGs"
           git push
