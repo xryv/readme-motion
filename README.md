@@ -81,12 +81,10 @@ node cli/index.js --config motion.config.json
 ---
 
 <p align="center">
-  <a href="https://hits.seeyoufarm.com">
-    <img
-      src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fxryv%2Freadme-motion&title=visits&edge_flat=false&count_bg=%2300E5FF&title_bg=%23000000&icon=github.svg&icon_color=%23ffffff"
-      alt="readme-motion visitor counter"
-    />
-  </a>
+  <img
+    alt="readme-motion visits"
+    src="https://visitor-badge.laobi.icu/badge?page_id=xryv.readme-motion&left_color=777&right_color=00E5FF&left_text=visits"
+  />
 </p>
 
 > *the answer was already known before you asked, but only if you knew what to listen for.*
