@@ -1,0 +1,34 @@
+{
+  "outDir": "assets",
+  "items": [
+    {
+      "type": "typewriter",
+      "file": "typing.svg",
+      "width": 600,
+      "height": 60,
+      "fontFamily": "Inter, Segoe UI, Roboto, Arial",
+      "fontSize": 26,
+      "textColor": "#E6EDF3",
+      "cursorColor": "#00E5FF",
+      "bg": "transparent",
+      "lines": [
+        "Web & Mobile Developer ✨",
+        "Clean Code Advocate 🧼",
+        "Building magical tools ⚙️"
+      ],
+      "speedMs": 60,
+      "pauseMs": 1200
+    },
+    {
+      "type": "progress",
+      "file": "progress-build.svg",
+      "width": 600,
+      "height": 60,
+      "bg": "#0d1117",
+      "barColor": "#00E5FF",
+      "trackColor": "#1f2937",
+      "label": "Build pipeline",
+      "percent": 72
+    }
+  ]
+}

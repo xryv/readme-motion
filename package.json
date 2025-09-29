@@ -1,0 +1,28 @@
+{
+  "name": "readme-motion",
+  "version": "0.1.0",
+  "description": "Generate gorgeous, dependency-free animated SVGs for your GitHub README from a tiny JSON file.",
+  "bin": {
+    "readme-motion": "cli/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node cli/index.js",
+    "demo": "node cli/index.js --config motion.config.json"
+  },
+  "keywords": [
+    "github",
+    "readme",
+    "svg",
+    "animation",
+    "typewriter",
+    "badge",
+    "progress",
+    "no-deps"
+  ],
+  "author": "xryv",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
