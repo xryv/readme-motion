@@ -52,3 +52,13 @@ readme-motion --init
 npx readme-motion --config motion.config.json
 # or
 node cli/index.js --config motion.config.json
+
+
+---
+
+![Typing](assets/typing.svg)
+![Build Progress](assets/progress-build.svg)
+![Status](assets/badge-status.svg)
+![Stars](assets/counter-stars.svg)
+![Commits](assets/sparkline-commits.svg)
+![Ticker](assets/ticker-nowplaying.svg)
