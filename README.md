@@ -9,6 +9,15 @@
   <i>No server. No build chain. Just commit and use.</i>
 </p>
 
+
+![Typing](assets/typing.svg)
+![Build Progress](assets/progress-build.svg)
+![Status](assets/badge-status.svg)
+![Stars](assets/counter-stars.svg)
+![Commits](assets/sparkline-commits.svg)
+![Ticker](assets/ticker-nowplaying.svg)
+
+
 <p align="center">
   <a href="https://github.com/xryv/readme-motion/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xryv/readme-motion?style=for-the-badge"></a>
   <a href="https://github.com/xryv/readme-motion/actions"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/xryv/readme-motion/readme-motion.yml?style=for-the-badge&label=build"></a>
@@ -54,11 +63,4 @@ npx readme-motion --config motion.config.json
 node cli/index.js --config motion.config.json
 
 
----
 
-![Typing](assets/typing.svg)
-![Build Progress](assets/progress-build.svg)
-![Status](assets/badge-status.svg)
-![Stars](assets/counter-stars.svg)
-![Commits](assets/sparkline-commits.svg)
-![Ticker](assets/ticker-nowplaying.svg)
